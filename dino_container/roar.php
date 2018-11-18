@@ -7,4 +7,9 @@ use Monolog\Logger;
 require  __DIR__ . '/../vendor/autoload.php';
 
 $logger = new Logger('main');
-$logger->info('ROOOOOOOOAR');
+runApp($logger);
+
+function runApp($logger)
+{
+    $logger->info('ROOOOOOOOAR');
+}
